@@ -1,0 +1,152 @@
+
+.container {
+  margin-top: 1rem;
+
+}
+
+.main, .mainContainer, .aboutBox, .gifBox, .linkContainer {
+  padding: 1rem 0rem 4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainContainer{
+  min-height: 100vh;
+  padding: 0 2rem;
+
+
+}
+.title a, .aboutBox h2,
+.linkContainer a{
+  color: #13a4f2;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active, 
+.aboutBox h2:hover, 
+.linkContainer a:hover, 
+.linkContainer a:focus, 
+.linkContainer a:active {
+  text-decoration: underline;
+  letter-spacing: 0.1rem;
+  transition: .4s;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.connect {
+  margin: 1rem 0;
+}
+
+.description {
+  margin: .5rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+
+.gif{
+  width: 250px;
+  height: 250px;
+  border-radius: 1.5rem;
+  margin: 1rem;
+  transition: 0.3s;
+ 
+}
+
+.aboutContainer{
+  background-color: #2b2f34;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  width: 100vw;
+  min-height: 60vh;
+  padding: 3rem 6rem;
+}
+.aboutContainer .description{
+  font-size: 1rem;
+}
+.aboutBox, .gifBox{
+  min-height: 40vh;
+
+}
+
+.aboutBox h2{
+  font-size: 2.5rem;
+  color: #13a4f2;
+  transition: 0.3s;
+}
+.linkContainer{
+  min-height: 30vh;
+  min-width: 80vw;
+  flex-direction: row;
+  padding: 1rem 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+.linkContainer a{
+  font-size: 1rem;
+  margin: 0 2rem;
+  
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+
+@media (max-width: 700px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .linkContainer{
+    max-width: 80vw;
+  }
+  .linkContainer div, .linkContainer div a {
+    margin: 0 1rem;
+  }
+  .aboutContainer{
+    flex-direction: column;
+  }
+
+  .aboutBox h2{
+    width: 70vw;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .container{
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+}
